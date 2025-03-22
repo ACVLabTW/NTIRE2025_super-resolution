@@ -8,12 +8,14 @@
 [Input / Output file (GoogleDrive)](https://drive.google.com/drive/folders/1W20CJu2jy8mCxVqKCUG_GAPb6AOmuK-R?usp=sharing)
 
 
+
 ### Environments
 
 ```sh
 conda create -n NTIRE-SR python=3.8
 conda activate NTIRE-SR
 pip install -r requirements.txt
+pip install basicsr
 ```
 ### Folder Structure
 ```
@@ -32,6 +34,13 @@ output_dir
 ├── 0902x4.png
 ├──...
 
+```
+
+
+### How to test? 
+
+```
+python test.py --test_dir "/path/to/test_dir/LR"
 ```
 
 ### Command to calculate metrics
